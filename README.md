@@ -8,7 +8,7 @@ Ce travail constitue l'ensemble de mes présentations au format web :
 * CSS,
 * JAVASCRIPT.
 
-J'ai utilisé le framework <strong><a href="https://revealjs.com/" target="_blank" rel="noreferrer">revealjs</a></strong> pour le moteur des slides.
+J'ai utilisé le Framework <strong><a href="https://revealjs.com/" target="_blank" rel="noreferrer">revealjs</a></strong> pour le moteur des slides.
 
 J'ai utilisé d'autres libraires pour manipuler des animations à mes goûts :
 </br>
