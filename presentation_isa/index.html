@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Présentation du PROJET ISA </title>
+	<meta name="author" content="Jéros">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- gestion des css -->
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/style.css">
+	<!-- animation-->
+	<link rel="stylesheet" href="dist/animate.min.css">
+	<link rel="stylesheet" href="plugin/appearance/appearance.css">
+	<!-- choix duTheme-->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="dist/fontawesome.min.css">
+	<script src="plugin/particles/particles.min.js"></script>
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="accueil">
+				<div id="particles-js"></div>
+				<script src="plugin/particles/scriptP.js"></script>
+				<img src="img/logoappli.svg" alt="logo de projet isa" style="width:30em;">
+			</section>
+			<!-- Diapo de garde -->
+			<section id="page_garde" data-transition="fade-in slide-out">
+				<div id="box1">
+					<img src="img/logoappli.svg" alt="logo de projet isa" style="width:5em;">
+					<img src="img/LogoUni.png" alt="logo de l'univ" style="width:2em;">
+				</div>
+				<div id="box2">
+					<h1 class="animated flipInX slow">PROJET ISA</h1>
+					<h3 class="animated flipInX slow" data-delay="700">Itinéraire de Suivi des Apprentis</h3>
+					<h4 class="animated flipInX slow" data-delay="800">SIG-WEB</h4>
+				</div>
+
+				<div id="box3">
+					<div class="animated bounceInLeft" style="font-size: 20px;">Année Scolaire : 2020-2021</div>
+					<ul style="text-align: center;text-decoration: none;list-style: none;">
+						<span style="color:tomato;text-decoration: underline;">GROUPE</span>
+						<li class="animated bounceInRight">Alex</li>
+						<li class="animated bounceInRight">Jeanne</li>
+						<li class="animated bounceInRight">Jéros</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Diapo de plan -->
+			<section id="page_plan" data-transition="convex-in fade-out">
+				<h2 class="animated flipInX slow">Plan</h2>
+				<ol>
+					<!-- <li class="animated shrinkInBlur">Objectifs</li> -->
+					<li class="animated skidLeftBig">Outils</li>
+					<li class="animated skidLeft">Modèle Conceptuel des données (MCD)</li>
+					<li class="animated skidRightBig">Espace Membre</li>
+					<li class="animated shrinkIn">Carte</li>
+					<li class="animated shrinkInBlur">Données</li>
+					<li class="animated shrinkInBlur">Démonstration</li>
+					<li class="animated skidRight">Améliorations potentielles</li>
+					<li class="animated skidRight">Difficultés</li>
+					<li class="animated skidLeft">Conclusion</li>
+					<li class="animated shrinkIn">Bibliographie</li>
+				</ol>
+			</section>
+
+			<!-- Technologies mobilisées -->
+			<section id="page_tech" data-transition="convex">
+				<h2>1. OUTILS</h2>
+				<img src="img/carte_mentale.png" alt="carte mentale des outils utilisés" class="image" style="height:80%;padding: 5px;">
+			</section>
+
+			<!-- Diapo de MCD -->
+			<section id="page_mcd" data-transition="slide-in fade-out">
+				<h2>2. MCD</h2>
+				<img src="img/mcd.png" alt="modele conceptuel du projet" class="image" style="height:60%;">
+			</section>
+			<!-- Diapo de Grantt -->
+			<!-- <section id="page_mcd" data-transition="fade-in slide-out">
+				<h2>3. Diagramme de Gantt</h2>
+				<img src="img/gantt.png" alt="modele conceptuel du projet" class="image" style="height:60%;">
+			</section> -->
+
+			<!-- Diapo espace membre -->
+			<section id="page_membre" data-transition="concave">
+					<h3>3. espace membre</h3>
+					<h4>Page de connexion / Page d'inscription </h4>
+					<div class="connexion_row">
+						<img src="img/pg_connexion.PNG" alt="Page de connexion" class="image" style="width:10em;margin:1em;">
+						<div class="connexion_serveur">
+							<div>
+								<h4>Côté client</h4>
+								<ul>
+									<li>CSS : Validation des inputs</li>
+									<li>Javascript : Vérification et Validation des données</li>
+								</ul>
+							</div>
+							<div><br />
+								<h4>Côté serveur : PHP</h4>
+								<ul>
+									<li>Vérification des données</li>
+									<li>Validation et Connexion à la base de données</li>
+									<li>Requête dans la base de données</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<!-- Diapo carte -->
+			<section id="carte" class="carte" data-transition="convex">
+					<h3>4. Carte</h3>
+					<div class="carte_row">
+						<div>
+							<h4>Fonctionnalités</h4>
+							<ul>
+								<li>Choix de fond de carte</li>
+								<li>Zoom et plein écran</li>
+								<li>Géolocalisation</li>
+								<li>Recentrer la carte</li>
+								<li>Itinéraire</li>
+								<li>NoScript</li>
+								<li>Chargement des données(Ajax, Fetch)</li>
+								<li>...</li>
+							</ul>
+						</div>
+						<img src="img/carte.PNG" alt="carte" class="image" style="width:16em;margin:1em;">
+					</div>
+			</section>
+
+			<!-- Diapo COMPA -->
+			<section id="compa" data-transition="concave">
+					<h4>4. Carte : Chargement des données en Json (GeoJson)</h4>
+					<!-- <img src="img/compa.PNG" alt="comparaiosn de deux méthodes de chargement de données" class="image" style="height:80%;"> -->
+				<div class="connexion_row" style="font-size:30px;margin:0;padding:0;">
+					<div>
+						<h5 style="color:greenyellow">Ajax- Promesse - Async & Await</h5>
+						<pre><code data-trim >
+							function chargerDatas(url) {
+								return new Promise(function (resolve, reject) {
+									$.ajax({
+										url: url,
+										type: 'GET',
+										dataType: 'json',
+					
+										success: function (response) {
+											resolve(response)
+										},
+										error: function (error) {
+											reject(error)
+										},
+									})
+								})
+							}
+					
+							async function getData(url) {
+								var response = await chargerDatas(url);
+								return response;
+							}
+						</code></pre>
+					</div>
+					<div>
+						<h5 style="color:greenyellow"> Fetch - Async & Await</h5>
+						<pre><code data-trim data-noescape>
+							async function chargerDonnees(url) {
+								var resp = await fetch(url);
+								var response = await resp.json();
+								return response;
+							}
+						</code></pre>
+					</div>
+				</div>
+			</section>
+			<!-- Diapo donnée -->
+			<section id="data" data-transition="concave">
+				<h3>5. Page de données</h3>
+					
+					<div class="connexion_row" style="align-items: stretch;">
+						<div class="connexion_serveur"> 
+							<div>
+								<h4 style="color:greenyellow"> non Formulaire </h4>
+								<h5>Graphique</h5>
+								<ul>
+									<li>Données du côté serveur au côté client par :<br/> PHP et Ajax</li>
+									<li>Modélisation avec Anychart et <br/> Mise à jour avec <span style="color:tomato"> setInterval sur 30sec</span></li>
+								</ul>
+							</div><br/><br/>
+							<div>
+								<h5 style="margin-bottom: 0; margin-top:10px;">Listing</h5>
+								<span style="margin: 0; font-size:20px;">PHP / Javascript</span>
+
+							</div>
+
+						</div>
+
+						<div class="connexion_serveur">
+							<h4 style="color:greenyellow">Formulaire : ajout, modif, import et export </h4>
+							<div>
+								<h5> Côté client</h5>
+								<ul>
+									<li>CSS : Validation des inputs</li>
+								</ul>
+							</div>
+							<div><br />
+								<h5>Côté serveur : PHP</h5>
+								<ul>
+									<li>Vérification</li>
+									<li>Validation et Connexion à la base de données</li>
+									<li>Requête dans la base de données</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<!-- Diapo DEMO -->
+			<section data-transition="zoom" >6. Démonstration</section>
+
+			<!-- Diapo améliorations potentielles -->
+			<section id="page_amelioration" data-transition="convex">
+				<h3>7. Améliorations Potentielles</h3>
+				<ul>
+					<li class="animated skidRight">Mettre en place un fond de carte en localhost : Qgis + Postgres + Geoserver</li>
+					<li class="animated skidLeft">Ramener le menu de routing au niveau des markers</li>
+					<li class="animated skidRight">Sécurisation des données</li>
+					<li class="animated skidLeft">API pour avoir d'autres types d'itinéraires (bâteau, train, avion etc...)</li>
+					<li class="animated skidRight">Itinéraire hors France Métropolitaine</li>
+					<li class="animated skidLeft">Couplage avec une autre application type Waze ou Google pour avoir un état du trafic</li>
+					<li class="animated skidRight">Faciliter la mise à jour de la base de données (classe qui disparaît, fusion de communes etc...)</li>
+					<li class="animated skidLeft">Optimisation du code (répétitions, rassembler plusieurs scripts, utilisation de la POO etc...)</li>
+					<li>...</li>
+				</ul>
+			</section>
+
+			<!-- Diapo Difficultés -->
+			<section id="Difficultés" data-transition="concave">
+				<h3> 8. Difficultés</h3>
+				<ul>
+					<li>Crise du covid</li>
+					<li>Changements d'emploi du temps</li>
+					<li>En Css</li>
+					<li>En Php</li>
+					<li>Demande compliquée pour le niveau de la licence</li>
+				</ul>
+			</section>
+
+			<!-- conclusion -->
+			<section id="fin">
+				<h3>9. Conclusion</h3>
+				<ol>
+					<li>Maîtrise de HTML</li>
+					<li>Maîtrise de CSS
+						<ul>
+							<li class="animated shrinkIn" style="color: palevioletred;">Mise en place d'une grille en Css</li>
+							<li class="animated shrinkIn" style="color: palevioletred;">Manipulation de la responsive design</li>
+						</ul>
+					</li>
+					<li>Maîtrise des Nouvelles Technologies de Javascript ES6
+						<ul>
+							<li class="animated shrinkInBlur" style="color: palevioletred;">Promesse</li>
+							<li class="animated shrinkInBlur" style="color: palevioletred;">Closure</li>
+							<li class="animated shrinkInBlur" style="color: palevioletred;">Fonctions fléchées et auto-invoquées</li>
+							<li class="animated shrinkIn" style="color: palevioletred;">Module, import et export</li>
+							<li class="animated shrinkIn" style="color: palevioletred;">...</li>
+						</ul>
+					</li>
+					<li>Très bon niveau en PHP</li>
+					<li>Maîtrise de SQL/PLPGSQL</li>
+				</ol>
+			</section>
+
+			<!-- Diapo Bibio -->
+			<section id="Bibliographie">
+			<h3>10. Bibliographie</h3>
+			<button id="biblio">OUVRIR ✔️</button>
+			<script>
+				document.querySelector('#biblio').addEventListener('click',()=>{
+					window.open('biblio/🌍 LIENS INDISPENSABLES-Projet ISA 🔗.html');
+				})
+			</script>
+			</section>
+
+			<!-- Mot de fin -->
+			<section id="mot_fin" data-transition="zoom">
+				<h1>Merci de votre aimable attention</h1>
+			</section>
+
+		</div>
+	</div>
+
+	<!-- gestion des js -->
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/appearance/appearance.js"></script>
+	<script src="plugin/customcontrols/controlCustom.js"></script>
+	<script>
+		// moteur de reveal
+		Reveal.initialize({
+			hash: true,
+			controls: false,
+			controlsTutorial: true,
+			slideNumber: 'c',
+			hash: true,
+			touch: true,
+			progress: true,
+			history: true,
+			mouseWheel: true,
+			center: true,
+			appearance: {
+				baseclass: "animated",
+				visibleclass: "in",
+				hideagain: true,
+				delay: 300
+			},
+			customcontrols: {
+				slideNumberCSS: 'position: fixed; display: block; right: 90px; top: auto; left: auto; width: 50px; bottom: 30px; z-index: 31; font-family: Helvetica, sans-serif; font-size:  12px; line-height: 1; padding: 5px; text-align: center; border-radius: 10px; background-color: rgba(128,128,128,.5)',
+				controls: [{
+						icon: '<i class="fa fa-caret-left"></i>',
+						css: 'position: fixed; right: 60px; bottom: 30px; z-index: 30; font-size: 24px;',
+						action: 'Reveal.prev(); return false;'
+					},
+					{
+						icon: '<i class="fa fa-caret-right"></i>',
+						css: 'position: fixed; right: 30px; bottom: 30px; z-index: 30; font-size: 24px;',
+						action: 'Reveal.next(); return false;'
+					}
+				]
+			},
+
+			// gestion des plugins
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, Appearance, RevealCustomControls],
+
+			// gestion des menus 
+			menu: {
+				numbers: 'c',
+				openSlideNumber: true,
+				themes: true,
+				themesPath: 'lib/reveal.js/dist/theme/',
+				transitions: true,
+				custom: [{
+					title: 'Custom',
+					icon: '<i class="fa fa-bookmark">',
+					src: 'links.html'
+				}]
+			}
+		});
+
+		toggleMenu = () => {
+			let menu = Reveal.getPlugin('menu');
+			if (menu) menu.toggle();
+		};
+	</script>
+</body>
+
+</html>

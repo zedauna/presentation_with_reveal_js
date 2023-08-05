@@ -1,0 +1,70 @@
+#page_garde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#box1,
+#box3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connexion,
+.connexion_serveur,
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connexion_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    line-height: 2em;
+}
+
+.carte_row,
+.compa_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+}
+
+/* .slides {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.reveal.ready .slides {
+    opacity: 1;
+}
+
+.backgrounds {
+    background: #1a1626;
+} */
+
+/* canvas {
+    display: block;
+    vertical-align:bottom;
+} */
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+.image{
+    border-radius: 8px; border: 1px solid #ddd;
+}

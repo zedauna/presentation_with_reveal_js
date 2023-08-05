@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Présentation alternance ONF </title>
+	<meta name="author" content="Jéros VIGAN">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- gestion des css -->
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reset_1.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/style.css">
+	<!-- animation-->
+	<link rel="stylesheet" href="dist/animate.min.css">
+	<link rel="stylesheet" href="plugin/appearance/appearance.css">
+	<!-- choix duTheme-->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	<link rel="stylesheet" href="dist/theme/perso.css" id="theme">
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="dist/fontawesome.min.css">
+	<!-- <script src="plugin/particles/particles.min.js"></script> -->
+	<script src="plugin/particles_2/tsparticles.min.js"></script>
+	<script src="plugin/particles_2/buttons.js"></script>
+	<script src="plugin/particles_2/scriptP_2.js"></script>
+	<script src="plugin/perso/color.js"></script>
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="accueil">
+				<h3 style="display: none;">Accueil</h3>
+				<!-- <div id="particles-js"></div> -->
+				<!-- <script src="plugin/particles/scriptP.js"></script> -->
+				<!-- <embed src="img/wordcloud.svg" name='SVG' type='image/svg+xml'> -->
+				<img src="img/page_garde/wordcloud.svg" alt="nuage de mots" id='ImageGarde' class="animation_image_entre">
+				<script>
+					particls_func(id="accueil");
+					
+					(function(){
+						var list_images=['wordcloud.svg','wordcloud1.svg','wordcloud2.svg','wordcloud3.svg','wordcloud4.svg',
+										'wordcloud5.svg','wordcloud6.svg','wordcloud7.svg','wordcloud8.svg','wordcloud9.svg'];
+						var target=document.querySelector('#ImageGarde');
+						setInterval(function(){
+							if(target.className=="animation_image_entre"){
+								target.classList.remove('animation_image_entre');
+								target.classList.add('animation_image_sortie');
+							}
+							else{
+								target.classList.add('animation_image_entre');
+								target.classList.remove('animation_image_sortie');
+							}
+							var image=list_images[getRandomInteger(0,list_images.length)];
+							target.src="img/page_garde/"+image;
+							
+						}, 1000)
+					})();
+				</script>
+
+			</section>
+			<!-- Diapo de garde -->
+			<section id="page_garde" data-transition="fade-in slide-out">
+				<div id="box1">
+					<img src="img/onf_logo.svg_.png" alt="logo de projet isa" style="width:5em;">
+					<img src="img/logo_lea.png" alt="logo de lea.ensuplr" style="width:2em;">
+					<img src="img/perpignan.png" alt="logo de l'univ" style="width:3em;">
+					<img src="img/LogoUni.png" alt="logo de l'univ" style="width:2em;">
+				</div>
+				<div id="box2">
+					<h2 class="animated flipInX slow">Rapport d'alternance</h2>
+					<h6 class="animated flipInX slow" id="colorRapport" data-delay="700">Développement d'applications web et autres réalisations pour l'aide à la gestion de forêts</h6>
+					<h4 class="animated flipInX slow" data-delay="800">Licence Professionnelle</h4>
+					<h5 class="animated slideI slow" data-delay="900">SIG-WEB</h5>
+					<script>changeColorRandom(id='#colorRapport',duration=1000);</script>
+				</div>
+
+				<div id="box3">
+					<div class="animated bounceInLeft" style="font-size: 20px;">
+						<ul style="text-align: center;text-decoration: none;list-style: none;">
+							<span style="color:tomato;text-decoration: underline;">Responsable de formation / Tuteur</span>
+							<li class="animated bounceInLeft">Isabelle UFARTE</li>
+						</ul>
+					</div>
+					<ul class="animated bounceInRight" style="text-align: center;text-decoration: none;list-style: none;">
+						<span style="color:tomato;text-decoration: underline;">ALTERNANT</span>
+						<li class="animated bounceInRight">Jéros</li>
+						<span style="color:tomato;text-decoration: underline;">Maître d'apprentissage</span>
+						<li class="animated bounceInRight">Nicolas LANDES</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Diapo de plan -->
+			<section id="page_plan" data-transition="convex-in fade-out">
+				<h2 class="animated flipInX slow">Plan</h2>
+				<ol>
+					<!-- <li class="animated shrinkInBlur">Objectifs</li> -->
+					<li class="animated skidLeftBig">Présentation de l'entreprise</li>
+					<li class="animated skidRightBig">Organisation du travail : Gantt</li>
+					<li class="animated shrinkInBlur">Outils de travail</li>
+					<li class="animated shrinkIn">Projet RECPREV EA</li>
+					<li class="animated animate__lightSpeedInRight">Projet REFSITES</li>
+					<!-- <li class="animated shrinkInBlur">Démonstration</li> -->
+					<!-- <li class="animated skidRight">Remarques</li> -->
+					<!-- <li class="animated skidRight">Difficultés</li> -->
+					<li class="animated animate__lightSpeedInLeft">Conclusion</li>
+					<li class="animated shrinkIn">Bibliographie</li>
+				</ol>
+			</section>
+
+			<!-- Présentation de l'entreprise -->
+			<section id="page_entreprise" data-transition="concave">
+				<h4>1. Présentation de l'entreprise (1/3)</h4>
+				<div class="ligne_glob">
+					<img src="img/repartition_des_forêts_echelle_France_ONF.jpg" alt="Présentation de l'entreprise"
+						class="image" style="width:40%;margin:1em;">
+					<div class="ligne_row">
+						<ul>
+							<li>Etablissement Public à Caractère Industriel et Commercial</li>
+							<li>25 % de la forêt française</li>
+							<li>Objectifs Principaux :
+								<ol>
+									<li class="animated shrinkInBlur" style="color: palevioletred; font-size:0.8em;">La production et la
+										valorisation de bois</li>
+									<li class="animated shrinkInBlur" style="color: palevioletred; font-size:0.8em;">La préservation et
+										la protection de l'environnement </li>
+									<li class="animated shrinkInBlur" style="color: palevioletred; font-size:0.8em;">L'accueil du public
+									</li>
+								</ol>
+							</li>
+							<li>Missions Principales :
+								<ol>
+									<li class="animated skidRightBig" style="color: palevioletred; font-size:0.8em;">La protection du
+										littoral</li>
+									<li class="animated skidRightBig" style="color: palevioletred; font-size:0.8em;">la Restauration des
+										Terrains de Montagne (RTM)</li>
+									<li class="animated skidRightBig" style="color: palevioletred; font-size:0.8em;">La Défense des
+										Forêts Contre les Incendies (DFCI)</li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Organigramme de l'entreprise -->
+			<section id="page_organigramme" data-transition="zoom">
+				<h4>1. Présentation de l'entreprise (2/3) </h4>
+				<img src="img/organigramme_onf.PNG" alt="Organigramme de l'entreprise" class="image"
+					style="width:75%;padding:5px;">
+			</section>
+
+			<!-- pôle SI Métiers SIG -->
+			<section id="page_pole_metier" data-transition="convex">
+				<h4>1. Présentation de l'entreprise (3/3) </h4>
+				<div class="box1">
+					<img src="img/forets.jpg" alt="forets" class="image" style="width:40%;margin:1em;">
+					<ul class="ul_class">
+						<h3 style="color:greenyellow">Le rôle du pôle SI Métiers est de permettre :</h3>
+						<li>L’ intégrité des données du système d’information</li>
+						<li>L’ interopérabilité des données du système d’information</li>
+						<li>L’ assurance du support des besoins métier avec le système d’information</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Diapo de Grantt -->
+			<section id="page_mcd" data-transition="fade-in slide-out">
+				<h4>2. Diagramme de Gantt</h4>
+				<img src="img/ganttt.JPG" alt="modele conceptuel du projet" class="image" style="width:120%;padding:5px;">
+			</section>
+
+			<!-- Technologies mobilisées -->
+			<section id="page_outils_bureau" data-transition="concave">
+				<h3>3. OUTILS (<span style="color:greenyellow;font-size:0.6em;">Bureau</span>) </h3>
+				<img src="img/Outils_prof.png" alt="carte mentale des outils utilisés" class="image"
+					style="width:200%;padding:5px;">
+			</section>
+
+			<section id="page_outils_clef" data-transition="convex">
+				<h3>3. OUTILS (<span style="color:greenyellow;font-size:0.6em;">Personnel</span>) </h3>
+				<img src="img/Outils.png" alt="carte mentale des outils utilisés" class="image"
+					style="width:200%;padding:5px;">
+			</section>
+
+			<!-- Diapo Projets -->
+			<section id="page_projets" data-transition="zoom">
+				<h3 >PROJET RECPREV</h3>
+			</section>
+
+			<!-- Diapo RECPREV -->
+			<section data-transition="zoom">
+				<h3>4. RECPREV (<span style="color:greenyellow;font-size:0.6em;text-align: center;">EA 2020 et EA 2021</span>)</h3>
+				<div class='box1'>
+					<ol class="ul_class" style="font-size:0.6em;">
+						<h3 style="color:greenyellow;text-align: center;">Procedures</h3>
+						<li>ETL (excel / python) <button id="etl_python">OUVRIR ✔️</button></li>
+						<li>Tableau de contingence (SQL /Posgres)</li>
+						<li>Arcgis</li>
+						<li>Évolution EA 2020 - 2021 (python) <button id="comp_python">OUVRIR ✔️</button></li>
+						<li>Évolution EA 2020 - 2021 (R) <button id="comp_R">OUVRIR ✔️</button></li>
+					</ol>
+
+					<ul class="ul_class" style="font-size:0.4em;color:orange;">
+						<h3 style="color:greenyellow;text-align: center;">Resultats</h3>
+						<li>Carte de motifs de suppression</li>
+						<li>Carte de motifs de reports</li>
+						<li>Carte des coupes supprimées</li>
+						<li>Carte des coupes reportées</li>
+					</ul>
+				</div>
+					<script>
+						document.querySelector('#etl_python').addEventListener('click', () => {
+							window.open('00_page_externe/recprev/RecPrev_ONF_v1.html');
+						});
+
+						document.querySelector('#comp_python').addEventListener('click', () => {
+							window.open('00_page_externe/recprev/Comparaison_EA_20210823.html');
+						});
+
+						document.querySelector('#comp_R').addEventListener('click', () => {
+							window.open('00_page_externe/recprev/comparaison_recPrev.html');
+						});
+					</script>
+			</section>
+
+			<!-- Diapo REFSITES -->
+			<section id="page_refsites" data-transition="zoom">
+				<h3>Projet REFSITES</h3>
+			</section>
+
+			<!-- Diapo de MCD -->
+			<section id="page_mcd" data-transition="slide-in fade-out">
+				<h2>5. REFSITES (<span style="color:greenyellow;font-size:0.6em;text-align: center;">MCD</span>)</h2>
+				<img src="img/mcd_refsites.PNG" alt="modele conceptuel du projet" class="image" style="width:100%;height:auto;padding:5px">
+			</section>
+
+			<!-- Diapo Portail Esri ONF -->
+			<section data-transition="zoom">
+				<h3> Projet REFSITES</h3>
+				<div class='box1'>
+					<ol class="ul_class" style="font-size:0.6em;">
+						<h3 style="color:greenyellow;text-align: center;">Procedures</h3>
+						<li>Conversion du fichier en shapefile (Argis, FME ou Python)</li>
+						<li>ETL selon le modèle de données avec FME ou Python</li>
+						<li>Importation du shapefile sur le portail ESRI ONF</li>
+						<ul>
+							<li class="animated slideInDown" style="color: palevioletred;">Création du feature layer</li>
+							<li class="animated slideInLeft" style="color: palevioletred;">Création de l’application map (WebMap)</li>
+							<li class="animated shrinkInBlur" style="color: palevioletred;">Création de l’application web (WebApp)</li>
+							<li class="animated slideInUp" style="color: palevioletred;">Création des Dashboards</li>
+						</ul>
+						<li>Gestion des pièces jointes</li>
+					</ol>
+					<ul class="ul_class" style="font-size:0.6em;">
+						<h3 style="color:greenyellow;text-align: center;">Attachement fichier</h3>
+						<li style="font-size:0.7em;">Automatisation avec python 🐍 </li>
+						<ul>
+							<li class="animated slideInRight" style="color: palevioletred;">Scripts d’extraction </li>
+							<li class="animated slideInRight" style="color: palevioletred; ">Script de correspondance</li>
+							<li class="animated slideInRight" style="color: palevioletred; ">Script de gestion des échecs </li>
+							<li class="animated slideInRight" style="color: palevioletred; ">Script de gestion des succès </li>
+							<li class="animated slideInRight" style="color: palevioletred; ">Scripts de renommage</li>
+							<li class="animated slideInRight" style="color: palevioletred; ">Script de gestion des pièces jointes</li>
+						</ul>
+					</ul>
+				</div>
+
+			</section>
+
+			<!-- Diapo demonstration-->
+			<section id="demonstration">
+				<h3>-- * Demonstration * --</h3>
+				<button id="demo">OUVRIR ✔️</button>
+				<script>
+					document.querySelector('#demo').addEventListener('click', () => {
+						window.open('https://portailsig.onf.fr/portal/home/index.html');
+					});
+				</script>
+			</section>
+
+			<!-- Diapo améliorations potentielles -->
+			<!-- <section id="page_remarques" data-transition="convex">
+				<h3>6. Remarques</h3>
+				<ul class="ul_class">
+					<li class="animated skidRight">Traitement des jeux de données : PostgreSQL et Excel</li>
+					<li class="animated skidLeft">Tableau de contingence (languages adaptées : R ou Python)</li>
+					<li class="animated skidRight">Data visualisation (importantes pour prise de décision )</li>
+					<li class="animated skidLeft">COVID : son impact</li>
+					<li class="animated skidRight">...</li>
+				</ul>
+			</section> -->
+
+			<!-- conclusion -->
+			<section id="fin">
+				<h3>6. Conclusion</h3>
+				<ol>
+					<li>Confiance de Soi (Plus de peur!) </li>
+					<li>Organisation du travail
+						<ul>
+							<li class="animated shrinkIn" style="color: palevioletred;">Méthodes de travail</li>
+							<li class="animated shrinkIn" style="color: palevioletred;">Communication efficace</li>
+						</ul>
+					</li>
+					<li>Découverte des outils de SIG
+						<ul>
+							<li class="animated shrinkInBlur" style="color: palevioletred;">FME</li>
+							<li class="animated shrinkInBlur" style="color: palevioletred;">Arcgis Pro</li>
+							<li class="animated shrinkInBlur" style="color: palevioletred;">Portail ESRI ONF</li>
+							<li class="animated shrinkIn" style="color: palevioletred;"> Arcgis Survey123</li>
+							<li class="animate__animated shrinkIn" style="color: palevioletred;">...</li>
+						</ul>
+					</li>
+					<li>Expérience Bénéfique (Maître d'apprentissage)</li>
+				</ol>
+			</section>
+
+			<!-- Diapo Bibio -->
+			<section id="Bibliographie">
+				<h3>7. Bibliographie</h3>
+				<button id="biblio">OUVRIR ✔️</button>
+				<script>
+					document.querySelector('#biblio').addEventListener('click', () => {
+						window.open('biblio/🌍 LIENS INDISPENSABLES-ONF🔗.html');
+					});
+				</script>
+			</section>
+
+			<!-- Mot de fin -->
+			<section id="mot_fin" data-transition="zoom">
+				<h2 id="colorChange" class="animate__animated animate__heartBeat">Merci de votre aimable attention</h2>
+				<script>
+					particls_func(id="mot_fin");
+					changeColorRandom(id='#colorChange',duration=1000);
+				</script>
+			</section>
+
+		</div>
+	</div>
+
+	<!-- gestion des js -->
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/appearance/appearance.js"></script>
+	<script src="plugin/customcontrols/controlCustom.js"></script>
+	<script>
+		// moteur de reveal
+		Reveal.initialize({
+			hash: true,
+			controls: false,
+			controlsTutorial: true,
+			slideNumber: 'c',
+			hash: true,
+			touch: true,
+			progress: true,
+			history: true,
+			mouseWheel: true,
+			center: true,
+			appearance: {
+				baseclass: "animated",
+				visibleclass: "in",
+				hideagain: true,
+				delay: 300
+			},
+			customcontrols: {
+				slideNumberCSS: 'position: fixed; display: block; right: 90px; top: auto; left: auto; width: 50px; bottom: 30px; z-index: 31; font-family: Helvetica, sans-serif; font-size:  12px; line-height: 1; padding: 5px; text-align: center; border-radius: 10px; background-color: rgba(128,128,128,.5)',
+				controls: [{
+						icon: '<i class="fa fa-caret-left"></i>',
+						css: 'position: fixed; right: 60px; bottom: 30px; z-index: 30; font-size: 24px;',
+						action: 'Reveal.prev(); return false;'
+					},
+					{
+						icon: '<i class="fa fa-caret-right"></i>',
+						css: 'position: fixed; right: 30px; bottom: 30px; z-index: 30; font-size: 24px;',
+						action: 'Reveal.next(); return false;'
+					}
+				]
+			},
+
+			// gestion des plugins
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, Appearance, RevealCustomControls],
+
+			// gestion des menus 
+			menu: {
+				numbers: 'c',
+				openSlideNumber: true,
+				themes: true,
+				themesPath: 'lib/reveal.js/dist/theme/',
+				transitions: true,
+				custom: [{
+					title: 'Custom',
+					icon: '<i class="fa fa-bookmark">',
+					src: 'links.html'
+				}]
+			}
+		});
+
+		toggleMenu = () => {
+			let menu = Reveal.getPlugin('menu');
+			if (menu) menu.toggle();
+		};
+	</script>
+</body>
+
+</html>
