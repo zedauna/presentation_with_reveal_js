@@ -11,6 +11,7 @@ Ce travail constitue l'ensemble de mes présentations au format web :
 J'ai utilisé le framework <strong><a href="https://revealjs.com/" target="_blank" rel="noreferrer">revealjs</a></strong> pour le moteur des slides.
 
 J'ai utilisé  d'autres libraires pour manipuler des animations à mes goûts :
+<br>
 <img src="libs.png" alt="image des libraires" class="image" style="width:100%;height:auto;padding:5px">
 
 Concernant les images des nuages de mots, vous avez cette application qui produit des images au format <strong>SVG</strong> pour faciliter le responsive design.
