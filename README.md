@@ -14,7 +14,7 @@ J'ai utilisé d'autres libraires pour manipuler des animations à mes goûts :
 </br>
 <img src="libs.png" alt="image des libraires" class="image" style="width:100%;height:auto;padding:5px;margin:5px">
 
-Concernant les images des nuages de mots, vous avez cette application qui produit des images au format <strong>SVG</strong> pour faciliter le responsive design.
+Concernant les nuages de mots en image, vous avez cette application qui produit des images au format <strong>SVG</strong> pour faciliter le responsive design.
 
 <strong><a href="https://jerosweb.com/05_nuage_mots/" target="_blank" rel="noreferrer">Application : Nuage des mots</a></strong>
 
